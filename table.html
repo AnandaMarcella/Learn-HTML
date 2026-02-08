@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<style>
+table, th, td {
+  border:1px solid black;
+}
+</style>
+<body>
+
+<h2>A basic HTML table</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+</table>
+
+<!-- border-collapse 
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}-->
+
+<!-- Batas Tabel Gaya 
+ table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}-->
+
+<!-- Batas Meja Bundar
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}  -->
+
+<!-- Lewati garis tepi di sekeliling tabel 
+ th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}  -->
+
+<!-- Garis Batas Tabel Titik-titik
+  th, td {
+  border-style: dotted;
+}
+  
+jenisnya
+dotted     
+dashed     
+solid     
+double     
+groove     
+ridge     
+inset     
+outset     
+none     
+hidden
+-->
+<!-- Ukuran table -->
+<table style="width:100%">
+  <tr>
+    <th style="width:70%">Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<table style="width:100%">
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <tr style="height:200px">
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<!-- Header -->
+ <!-- kiri 
+th {
+  text-align: left;
+}-->
+
+<!-- merge -->
+ <table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>94</td>
+  </tr>
+</table>
+
+<!-- Ketrangan table -->
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>February</td>
+    <td>$50</td>
+  </tr>
+</table>
+
+<!-- Padiing
+ th, td {
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+
+   Jarak Antar Sel
+   table {
+  border-spacing: 30px;
+}
+} -->
+
+colspan
+<table>
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+
+Rowspan
+<table>
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+</tr>
+</table>
+
+<!-- Gaya tabel
+
+garis zebra
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+garis zebra vertikal
+td:nth-child(even), th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+garisgebra v dan h
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even),td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+pembatas horizontal
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+ -->
+
+ <!-- hover
+  tr:hover {background-color: #D6EEEE;}
+  -->
+
+
+  <!-- Colgroup
+   <table>
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+  </colgroup>
+  <tr>
+    
+    Beberapa Elemen Kolom
+   <table>
+  <colgroup>
+    <col span="2" style="background-color: #D6EEEE">
+    <col span="3" style="background-color: pink">
+  </colgroup>
+
+  Grup Kolom Kosong
+  <table>
+  <colgroup>
+    <col span="3">
+    <col span="2" style="background-color: pink">
+  </colgroup>
+  <tr>
+
+    Sembunyikan Kolom
+    <colgroup>
+    <col span="2">
+    <col span="3" style="visibility: collapse">
+  </colgroup>
+   -->
+
+
+<p>To understand the example better, we have added borders to the table.</p>
+
+</body>
+</html>
+
